@@ -1,0 +1,31 @@
+<div class="container">
+    <div>
+    <h2>Modifier un Prof :</h2>
+    </div>
+    <form >
+    <div hidden class="col-sm-2 col-md-2 col-lg-2">
+    <label >ID Prof</label>
+    <input readonly type="text" [(ngModel)]="currentProf.idProf"
+    name="idProf" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+    <label >Nom Prof</label>
+    <input type="text"[(ngModel)]= "currentProf.nomProf"
+    name="nomProf" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+    <label >Prenom Prof</label>
+    <input type="text" [(ngModel)]= "currentProf.prenomProf"
+    name="prenomProf" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <label >Télephone prof</label>
+    <input type="text" [ngModel]="currentProf.telProf"
+    name="telProf" class="form-control">
+    </div>
+    <div class="mt-2">
+    <button type="submit" (click)="updateProf()" class="btn btn-success">Modifer</button>
+    </div>
+    </form>
+    </div>
+    
